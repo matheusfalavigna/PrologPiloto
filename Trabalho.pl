@@ -64,13 +64,13 @@ qtdAlu(esta,30).
 qtdAlu(madi,12).
 qtdAlu(red1,13).
 
-%a. quais disciplinas são ministradas na sexta; dia(X,sexta).
+%a. quais disciplinas são ministradas na sexta; 
 disc_sexta(X) :- dia(X,sexta).
-%b. que disciplina é ministrada por um certo professor em particular;  prof(X,cleilton).
+%b. que disciplina é ministrada por um certo professor em particular;  
 disc_prof(X,Professor) :- prof(X,Professor).
-%c. que disciplinas são ministradas no período cd; hora(X,cd).
+%c. que disciplinas são ministradas no período cd; 
 disc_cd(X,cd) :- hora(X,cd).
-%d. que disciplinas acontecem no mesmo período;  hora(Y,cd),dia(Y,sexta).
+%d. que disciplinas acontecem no mesmo período;  
 disc_mesm(X,Horario,Dia) :- hora(X,Horario),dia(X,Dia).
 %e. qual disciplina está em uma certa sala e num certo horário em particular;
 disc_sal_hora(X, Horario, Sala) :- hora(X,Horario),sala(X,Sala).
